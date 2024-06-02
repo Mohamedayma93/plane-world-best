@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Mario Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="game-container">
+  <!-- شاشة نهاية اللعبة -->
+  <div id="game-over-screen" class="hidden">
+    <h1>حظاً أوفر</h1>
+    <div id="summary">
+      <p id="coin-summary">Coins: 0</p>
+      <p id="kill-summary">Kills: 0</p>
+      <p id="time-summary">Time: 0s</p>
+    </div>
+    <button id="restart-button">بدء اللعبة مرة أخرى</button>
+  </div>
+  
+  <!-- بقية عناصر اللعبة -->
+  <div id="score-container">
+    <span id="coin-counter">Coins: 0</span>
+    <span id="kill-counter">Kills: 0</span>
+    <span id="time-counter">Time: 0s</span>
+    <div id="lives-container">
+      <img class="life" src="https://i.ibb.co/xsnzyY8/heart.png" alt="life">
+      <img class="life" src="https://i.ibb.co/xsnzyY8/heart.png" alt="life">
+      <img class="life" src="https://i.ibb.co/xsnzyY8/heart.png" alt="life">
+      <img class="life" src="https://i.ibb.co/xsnzyY8/heart.png" alt="life">
+    </div>
+  </div>
+  
+  <!-- بقية عناصر اللعبة -->
+  <img id="player" src="https://i.ibb.co/58Db9dj/mario.png">
+  <div id="platforms"></div>
+  <div id="coins"></div>
+  <div id="enemies"></div>
+  <div id="joystick-container"></div>
+  <button id="jump-button">Jump</button>
+  <button id="shoot-button">Shoot</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.7.3/nipplejs.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
